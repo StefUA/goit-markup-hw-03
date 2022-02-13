@@ -1,187 +1,183 @@
 :root {
-    /* Основные шрифты */
-    --main-font: 'Roboto', sans-serif;
-    --secondary-font: 'Raleway', sans-serif;
+  /* Основные шрифты */
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
 
-    /* Светлая тема текста */
-    --accent-light-txt: #FFFFFF;
-    --primary-light-txt: #2196F3;
-    
-    /* Тёмная тема текста */
-    --accent-dark-txt: #212121;
-    --primary-dark-txt: #757575;
-    --secondary-dark-txt: rgba(255, 255, 255, 0.6);
+  /* Светлая тема текста */
+  --accent-light-txt: #ffffff;
+  --primary-light-txt: #2196f3;
 
-    /* Светлая тема фона */
-    --light-bg: #F5F4FA;
-    --primary-light-bg: #2196F3;
-    /* Тёмная тема фона */
-    --primary-dark-bg: #2F303A;
+  /* Тёмная тема текста */
+  --accent-dark-txt: #212121;
+  --primary-dark-txt: #757575;
+  --secondary-dark-txt: rgba(255, 255, 255, 0.6);
 
-}    
-
-
+  /* Светлая тема фона */
+  --light-bg: #f5f4fa;
+  --primary-light-bg: #2196f3;
+  /* Тёмная тема фона */
+  --primary-dark-bg: #2f303a;
+}
 
 /* ========ГЛАВНАЯ СТРАНИЦА======= */
-body{
-    font-size: 14px;
-    font-family: var(--main-font);
-    font-style: normal;
-    letter-spacing: 0.03em;
-    color: var(--accent-dark-txt);
+body {
+  font-size: 14px;
+  font-family: var(--main-font);
+  font-style: normal;
+  letter-spacing: 0.03em;
+  color: var(--accent-dark-txt);
 }
 /* Шапка сайта */
 .header {
-
 }
 
-.logo-blue, 
+.logo-blue,
 .logo-dark,
 .logo-wite {
-    font-family: var(--secondary-font);
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
 
-    color: var(--primary-light-txt);
+  color: var(--primary-light-txt);
 }
 
 .logo-dark {
-    color: #000000;
+  color: #000000;
 }
 .logo-wite {
-    color: var(--accent-light-txt);
+  color: var(--accent-light-txt);
 }
 .link {
-    text-decoration: none;
-    color: currentColor;
+  text-decoration: none;
+  color: currentColor;
 }
 .list {
-    list-style-type: none;
-  }
+  list-style-type: none;
+}
 .main-nav,
 .contacts {
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .contacts {
-    color: var(--primary-dark-txt);
+  color: var(--primary-dark-txt);
 }
-.main-nav :hover, 
+.main-nav :hover,
 .main-nav :focus,
 .main-nav :active,
 .contacts :hover,
 .contacts :focus,
 .curent {
-    color: var(--primary-light-txt);
+  color: var(--primary-light-txt);
 }
 /* Секция герой */
 .main-hero {
-    background-color: var(--primary-dark-bg);
+  background-color: var(--primary-dark-bg);
 }
 .hero-text {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--accent-light-txt);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-light-txt);
 }
 .hero-button {
-    background-color: var(--primary-light-bg);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+  background-color: var(--primary-light-bg);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .hero-button :hover,
 .hero-button :focus {
-    background-color: #188CE8;
+  background-color: #188ce8;
 }
 .hero-button-text {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: var(--accent-light-txt);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--accent-light-txt);
 }
 /* Секция Наши приимущества */
 .benefits-caption {
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 1.14;
-    text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 .benefits-text {
-    line-height: 1.71;   
-    color: var(--primary-dark-txt);
+  line-height: 1.71;
+  color: var(--primary-dark-txt);
 }
 /* Секция О нас */
 .we-do {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.17;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
 }
 /* Секция Наша команда */
-.main-team{
-    background-color: var(--light-bg);
+.main-team {
+  background-color: var(--light-bg);
 }
 .team {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.17;   
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
 }
 .team-name,
 .work-name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
 }
 .team-position,
 .work-position {
-    line-height: 1.19;
-    color: var(--primary-dark-txt);
+  line-height: 1.19;
+  color: var(--primary-dark-txt);
 }
 /* Подвал сайта */
 .footer {
-    background-color: var(--primary-dark-bg);
-
+  background-color: var(--primary-dark-bg);
 }
 .footer-contacts {
-    color: var(--secondary-dark-txt);
-    font-style: normal;
+  color: var(--secondary-dark-txt);
+  font-style: normal;
 }
 
 .footer-adress :focus,
 .footer-adress :hover {
-    color: rgba(33, 150, 243, 1);
-    font-style: normal;
+  color: rgba(33, 150, 243, 1);
+  font-style: normal;
 }
 .location {
-    color: var(--accent-light-txt);
-    font-style: normal;
+  color: var(--accent-light-txt);
+  font-style: normal;
 }
 
 /* ===========ПОРТФОЛИО========== */
 
 .filters-list-btn {
-    font-weight: 500;
-    line-height: 1.73;
-    border-radius: 4px; 
-    cursor: pointer; 
-    background-color: var(--light-bg);
+  font-weight: 500;
+  line-height: 1.73;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--light-bg);
 }
 
 .filters-item-btn :hover,
 .filters-item-btn :focus,
 .filters-item-btn :active {
-    color: var(--accent-light-txt);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    cursor: pointer; 
-    background-color: var(--primary-light-bg);
+  color: var(--accent-light-txt);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--primary-light-bg);
 }
