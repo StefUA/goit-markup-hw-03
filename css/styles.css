@@ -150,10 +150,13 @@ body {
 }
 /* Секция О нас */
 .we-do {
+  text-align: center;
+  margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
 }
+
 
 /* Секция Наша команда */
 .section.team {
@@ -163,6 +166,10 @@ body {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
+}
+.team-title {
+  text-align: center;
+  margin-bottom: 50px;
 }
 .team-name,
 .work-name {
