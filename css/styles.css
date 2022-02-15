@@ -18,6 +18,29 @@
   /* Тёмная тема фона */
   --primary-dark-bg: #2f303a;
 }
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid red;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section.no-pading {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 /* ========ГЛАВНАЯ СТРАНИЦА======= */
 body {
@@ -55,6 +78,8 @@ body {
 }
 .list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 .main-nav,
 .contacts {
@@ -74,14 +99,18 @@ body {
   color: var(--primary-light-txt);
 }
 /* Секция герой */
-.main-hero {
+
+.hero {
   background-color: var(--primary-dark-bg);
+  text-align: center;
 }
-.hero-text {
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent-light-txt);
@@ -107,6 +136,8 @@ body {
 }
 /* Секция Наши приимущества */
 .benefits-caption {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-size: 14px;
   font-weight: bold;
   line-height: 1.14;
@@ -115,6 +146,7 @@ body {
 .benefits-text {
   line-height: 1.71;
   color: var(--primary-dark-txt);
+  margin: 0;
 }
 /* Секция О нас */
 .we-do {
@@ -122,8 +154,9 @@ body {
   font-size: 36px;
   line-height: 1.17;
 }
+
 /* Секция Наша команда */
-.main-team {
+.section.team {
   background-color: var(--light-bg);
 }
 .team {
