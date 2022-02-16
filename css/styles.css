@@ -50,7 +50,17 @@ body {
   color: var(--accent-dark-txt);
 }
 /* Шапка сайта */
+.container.head,
+.navigation,
+.main-nav.list,
+.contacts.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .header {
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-blue,
@@ -67,9 +77,11 @@ body {
 
 .logo-dark {
   color: #000000;
+  margin-right: 93px;
 }
 .logo-wite {
   color: var(--accent-light-txt);
+  margin-bottom: 20px;
 }
 .link {
   text-decoration: none;
@@ -80,6 +92,10 @@ body {
   padding: 0;
   margin: 0;
 }
+.main-nav.list {
+  width: 294px;
+  text-align: center;
+}
 .main-nav,
 .contacts {
   font-weight: 500;
@@ -88,6 +104,9 @@ body {
 }
 .contacts {
   color: var(--primary-dark-txt);
+}
+.mail {
+  margin-right: 50px;
 }
 .main-nav :hover,
 .main-nav :focus,
@@ -106,9 +125,13 @@ body {
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  width: 696px;
+  text-align: center;
 
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -118,6 +141,7 @@ body {
   background-color: var(--primary-light-bg);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  padding: 10px 32px;
 }
 .hero-button :hover,
 .hero-button :focus {
@@ -127,13 +151,28 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--accent-light-txt);
 }
 /* Секция Наши приимущества */
+.benefits,
+.we-do-position {
+  display: flex;
+}
+.benef {
+  width: 270px;
+  margin-right: 30px;
+}
+.box {
+  margin-right: 30px;
+}
+.benef:last-child,
+.box:last-child,
+.team-item:last-child {
+  margin: 0;
+}
 .benefits-caption {
   margin-top: 0;
   margin-bottom: 10px;
@@ -156,7 +195,6 @@ body {
   line-height: 1.17;
 }
 
-
 /* Секция Наша команда */
 .section.team {
   background-color: var(--light-bg);
@@ -165,6 +203,21 @@ body {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
+}
+.team-item {
+  text-align: center;
+  margin-right: 30px;
+  font-size: 16px;
+  line-height: 1.18;
+  width: 270px;
+  height: 368px;
+  background-color: var(--accent-light-txt);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-card {
+  display: flex;
 }
 .team-title {
   text-align: center;
@@ -181,9 +234,22 @@ body {
   line-height: 1.19;
   color: var(--primary-dark-txt);
 }
+.team-foto {
+  margin-bottom: 30px;
+}
+.team-name {
+  margin-bottom: 10px;
+}
 /* Подвал сайта */
 .footer {
   background-color: var(--primary-dark-bg);
+}
+.container.foter {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.logo-wite.position {
+  margin-bottom: 20px;
 }
 .footer-contacts {
   color: var(--secondary-dark-txt);
@@ -199,6 +265,12 @@ body {
   color: var(--accent-light-txt);
   font-style: normal;
 }
+.adress-position {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 81px;
+}
 
 /* ===========ПОРТФОЛИО========== */
 
@@ -208,6 +280,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
   background-color: var(--light-bg);
+  margin-right: 4px;
 }
 
 .filters-item-btn :hover,
@@ -219,4 +292,17 @@ body {
   border-radius: 4px;
   cursor: pointer;
   background-color: var(--primary-light-bg);
+}
+.filters-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.work.link {
+  flex-basis: calc((100% - 30px) / 3);
 }
