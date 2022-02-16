@@ -20,7 +20,7 @@
     <!-- Шапка сайта -->
     <header class="header">
       <div class="container head">
-        <nav>
+        <nav class="navigation">
           <a href="index.html" class="logo-blue"
             >Web<span class="logo-dark">Studio</span>
           </a>
@@ -32,7 +32,7 @@
         </nav>
         <ul class="contacts list">
           <li>
-            <a href="mailto:info@devstudio.com" class="link"
+            <a href="mailto:info@devstudio.com" class="mail link"
               >info@devstudio.com</a
             >
           </li>
@@ -58,34 +58,36 @@
         <div class="container">
           <h2 hidden>Наши приимущества</h2>
           <ul class="benefits-list list">
-            <li>
-              <h3 class="benefits-caption">Внимание к деталям</h3>
-              <p class="benefits-text">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
-              </p>
-            </li>
-            <li>
-              <h3 class="benefits-caption">Пунктуальность</h3>
-              <p class="benefits-text">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
-              </p>
-            </li>
-            <li>
-              <h3 class="benefits-caption">Планирование</h3>
-              <p class="benefits-text">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
-              </p>
-            </li>
-            <li>
-              <h3 class="benefits-caption">Современные технологии</h3>
-              <p class="benefits-text">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
-              </p>
-            </li>
+            <div class="benefits">
+              <li class="benef">
+                <h3 class="benefits-caption">Внимание к деталям</h3>
+                <p class="benefits-text">
+                  Идейные соображения, а также начало повседневной работы по
+                  формированию позиции.
+                </p>
+              </li>
+              <li class="benef">
+                <h3 class="benefits-caption">Пунктуальность</h3>
+                <p class="benefits-text">
+                  Задача организации, в особенности же рамки и место обучения
+                  кадров влечет за собой.
+                </p>
+              </li>
+              <li class="benef">
+                <h3 class="benefits-caption">Планирование</h3>
+                <p class="benefits-text">
+                  Равным образом консультация с широким активом в значительной
+                  степени обуславливает.
+                </p>
+              </li>
+              <li class="benef">
+                <h3 class="benefits-caption">Современные технологии</h3>
+                <p class="benefits-text">
+                  Значимость этих проблем настолько очевидна, что реализация
+                  плановых заданий.
+                </p>
+              </li>
+            </div>
           </ul>
         </div>
       </section>
@@ -94,27 +96,29 @@
         <div class="container">
           <h2 class="we-do">Чем мы занимаемся</h2>
           <ul class="we-do-list list">
-            <li class="box">
-              <img
-                src="./images/Main/box-1.jpg"
-                alt="верстка мужские руки на клавиатуре"
-                width="370"
-              />
-            </li>
-            <li class="box">
-              <img
-                src="./images/Main/box-2.jpg"
-                alt="женские руки на клавиатуре ноутбука"
-                width="370"
-              />
-            </li>
-            <li class="box">
-              <img
-                src="./images/Main/box-3.jpg"
-                alt="цветовая гамма на экране планшета"
-                width="370"
-              />
-            </li>
+            <div class="we-do-position">
+              <li class="box">
+                <img
+                  src="./images/Main/box-1.jpg"
+                  alt="верстка мужские руки на клавиатуре"
+                  width="370"
+                />
+              </li>
+              <li class="box">
+                <img
+                  src="./images/Main/box-2.jpg"
+                  alt="женские руки на клавиатуре ноутбука"
+                  width="370"
+                />
+              </li>
+              <li class="box">
+                <img
+                  src="./images/Main/box-3.jpg"
+                  alt="цветовая гамма на экране планшета"
+                  width="370"
+                />
+              </li>
+            </div>
           </ul>
         </div>
       </section>
@@ -123,64 +127,68 @@
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
-            <li class="team-item">
-              <img
-                class="team-foto"
-                src="images/Main/img-team-card1.jpg"
-                alt="фото Игорь Демьяненко"
-                width="270"
-              />
-              <h3 class="team-name">Игорь Демьяненко</h3>
-              <p class="team-position">Product Designer</p>
-            </li>
-            <li class="team-item">
-              <img
-                class="team-foto"
-                src="images/Main/img-team-card2.jpg"
-                alt="фото Ольга Репина"
-                width="270"
-              />
-              <h3 class="team-name">Ольга Репина</h3>
-              <p class="team-position">Frontend Developer</p>
-            </li>
-            <li class="team-item">
-              <img
-                class="team-foto"
-                src="images/Main/img-team-card3.jpg"
-                alt="фото Николай Тарасов"
-                width="270"
-              />
-              <h3 class="team-name">Николай Тарасов</h3>
-              <p class="team-position">Marketing</p>
-            </li>
-            <li class="team-item">
-              <img
-                class="team-foto"
-                src="images/Main/img-team-card4.jpg"
-                alt="фото Михаил Ермаков"
-                width="270"
-              />
-              <h3 class="team-name">Михаил Ермаков</h3>
-              <p class="team-position">UI Designer</p>
-            </li>
+            <div class="team-card">
+              <li class="team-item">
+                <img
+                  class="team-foto"
+                  src="images/Main/img-team-card1.jpg"
+                  alt="фото Игорь Демьяненко"
+                  width="270"
+                />
+                <h3 class="team-name">Игорь Демьяненко</h3>
+                <p class="team-position">Product Designer</p>
+              </li>
+              <li class="team-item">
+                <img
+                  class="team-foto"
+                  src="images/Main/img-team-card2.jpg"
+                  alt="фото Ольга Репина"
+                  width="270"
+                />
+                <h3 class="team-name">Ольга Репина</h3>
+                <p class="team-position">Frontend Developer</p>
+              </li>
+              <li class="team-item">
+                <img
+                  class="team-foto"
+                  src="images/Main/img-team-card3.jpg"
+                  alt="фото Николай Тарасов"
+                  width="270"
+                />
+                <h3 class="team-name">Николай Тарасов</h3>
+                <p class="team-position">Marketing</p>
+              </li>
+              <li class="team-item">
+                <img
+                  class="team-foto"
+                  src="images/Main/img-team-card4.jpg"
+                  alt="фото Михаил Ермаков"
+                  width="270"
+                />
+                <h3 class="team-name">Михаил Ермаков</h3>
+                <p class="team-position">UI Designer</p>
+              </li>
+            </div>
           </ul>
         </div>
       </section>
     </main>
     <!-- Подвал сайта -->
     <footer class="footer">
-      <div class="container">
-        <a href="index.html" class="logo-blue"
+      <div class="container foter">
+        <a href="index.html" class="logo-blue position"
           >Web<span class="logo-wite">Studio</span>
         </a>
         <address class="footer-adress">
-          <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
-          <a href="mailto:info@devstudio.com" class="footer-contacts link"
-            >info@devstudio.com</a
-          >
-          <a href="tel:+380961111111" class="footer-contacts link">
-            +38 096 111 11 11</a
-          >
+          <div class="adress-position">
+            <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
+            <a href="mailto:info@devstudio.com" class="footer-contacts link"
+              >info@devstudio.com</a
+            >
+            <a href="tel:+380961111111" class="footer-contacts link">
+              +38 096 111 11 11</a
+            >
+          </div>
         </address>
       </div>
     </footer>
