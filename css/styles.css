@@ -18,6 +18,8 @@
   /* Тёмная тема фона */
   --primary-dark-bg: #2f303a;
 }
+
+/* Утилиты */
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -40,6 +42,15 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
 /* ========ГЛАВНАЯ СТРАНИЦА======= */
 body {
@@ -50,17 +61,11 @@ body {
   color: var(--accent-dark-txt);
 }
 /* Шапка сайта */
-.container.head,
-.navigation,
-.main-nav.list,
-.contacts.list {
+
+.header,
+.main-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-.header {
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .logo-blue,
@@ -71,46 +76,51 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-
   color: var(--primary-light-txt);
 }
 
 .logo-dark {
   color: #000000;
-  margin-right: 93px;
 }
 .logo-wite {
   color: var(--accent-light-txt);
   margin-bottom: 20px;
 }
-.link {
-  text-decoration: none;
-  color: currentColor;
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
 }
-.list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.site-nav .item + .item {
+  margin-left: 50px;
 }
-.main-nav.list {
-  width: 294px;
-  text-align: center;
+.site-nav .link,
+.contacts .link{
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
-.main-nav,
+.site-nav,
 .contacts {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+/* Contacts */
 .contacts {
+  display: flex;
+  margin-left: auto;
+
   color: var(--primary-dark-txt);
 }
-.mail {
-  margin-right: 50px;
+.contacts .item + .item {
+  margin-left: 50px;
 }
-.main-nav :hover,
-.main-nav :focus,
-.main-nav :active,
+
+.site-nav :focus,
+.site-nav :hover,
+.site-nav :active,
 .contacts :hover,
 .contacts :focus,
 .curent {
