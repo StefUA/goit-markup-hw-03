@@ -254,9 +254,9 @@ body {
 }
 .team-name,
 .work-name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
 }
 .team-position,
 .work-position {
@@ -322,7 +322,7 @@ body {
   background-color: var(--primary-light-bg);
 }
 .filters-list {
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
